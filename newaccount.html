@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<!-- There is a relationship between this element and lesson (4)v(5) -->
+<html lang="en">
+
+<head>
+    <!-- There is a relationship between this element and lesson (4)v(5) -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/html-icon.ico">
+    <link rel="stylesheet" href="style.css">
+    <title>New account</title>
+
+    <style>
+        /* There is a relationship between <meter></meter> and lesson (28)v(29) -->*/
+        /* meter::-webkit-meter-bar {
+            background: #fdfdff;
+        } */
+        /* .................... */
+        /* meter::-webkit-meter-optimum-value {
+            background: blue;
+        }
+        
+        meter::-webkit-meter-suboptimum-value {
+            background: orange;
+        }
+        
+        meter::-webkit-meter-even-less-good-value {
+            background: red; 
+    }*/
+        /* meter {
+            height: 30px;
+            width: 150px;
+        } */
+        
+        textarea {
+            /* background: rgb(232, 202, 202); */
+            border: 1px solid rgb(79, 70, 236);
+            border-radius: 11px;
+            color: black;
+            text-align: left;
+            padding: 15px;
+            font-size: 22px;
+        }
+        /* table tr td {
+            color: black;
+        } */
+        /*         
+        .imgfilepath {
+            width: 111px
+        } */
+        
+        table tr td {
+            font-weight: bold;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <h1 title="lesson=(17,18,25) input form tag"><b>New account</b>
+    </h1>
+    <hr>
+
+    <center>
+        <br>
+        <div class="about">
+            <h2>Welcome ..</h2>
+
+            <p>We are welcome here, If you hope to be a designer or developer or full-stack, you are in the right place, when you are registering on our website you are able to benefit from the available resources, you are learning programming languages
+                and improving your skills to build high-quality websites. ...
+            </p>
+        </div>
+    </center>
+
+
+    <center>
+        <fieldset title="lesson=(17,18,25) input form" style="margin:11px;padding:5px;">
+            <legend>
+                <h3 title="lesson=(17,18,25) input form tag" style="margin:11px;padding:5px; color:black;">Register:</h3><br>
+            </legend>
+
+            <div class="about">
+                <h4 style="margin:5px; padding:5px;">It’s quick and easy ...</h4>
+
+                <form action="" title="lesson=(17,18,25) input form tag">
+                    <table title="lesson=(17,18,25) input form tag" border="2">
+                        <tr>
+                            <td><span style=" color:red;"> * </span><label>: Full Name</label></td>
+                            <td>
+                                <input type="text" name="fullname" placeholder="Full Name" required autofocus>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label for="eee"> : Gender</label></td>
+                            <td>
+                                <select name="gender" id=" ">
+                            <option value=" ">Choose gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+                            </td>
+                            <!-- <td><input id="eee " type="text " placeholder=" Gender "></td> -->
+                        </tr>
+                        <tr>
+                            <td><label>: Birth of date</label>
+                                <td><input type="date" name="date"></td>
+                        </tr>
+                        <tr>
+                            <td><label for="eee">: Country</label></td>
+                            <td>
+                                <select name="gender" id=" ">
+                            <option value="">Choose Country</option>
+                            <option value="Libya">Libya</option>
+                            <option value="Jordan">Jordan</option>
+                            <option value="Egypt">Egypt</option>
+                            <option value="Egypt" disabled>French</option>
+                        </select>
+                            </td>
+
+                        </tr>
+                        <tr>
+
+                            <td><label>: Nationality</label></td>
+                            <td>
+                                <label>Libya</label>
+                                <input type="radio" name="nationality" value="Libyan" required checked>
+
+                                <label>Jordan</label>
+                                <input type="radio" name="nationality" value="Jordan" required>
+
+                                <label>Egypt</label>
+                                <input type="radio" name="nationality" value="Egyptian" required disabled>
+
+                                <label>French</label>
+                                <input type="radio" name="nationality" value="French">
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><label>: Language</label></td>
+                            <td>
+                                <label>Arabic</label>
+                                <input type="radio" name="Language" value="arabic" required checked>
+                                <label>English</label>
+                                <input type="radio" name="Language" value="english" required>
+                                <label>French</label>
+                                <input type="radio" name="Language" value="french" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span style="color:red; "> * </span><label for="eee ">: Email</label></td>
+                            <td>
+                                <input type="email" name="email" placeholder="Email" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td><span style="color:red; "> * </span><label for="eee">: Password</label></td>
+                            <td>
+                                <input type="password" name="Password" placeholder="Password" required>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td colspan="1"></td>
+                            <td>
+                                <!-- submit button -->
+                                <button type="submit">Register</button>
+                                <!-- For send data to server, allow to write just links inside or outside website, not like text input that allow to write any text -->
+
+                                <button type="reset">Reset</button>
+                            </td>
+                        </tr>
+                    </table>
+
+                </form>
+                <br><br></div><br>
+        </fieldset><br>
+
+
+
+    </center>
+
+
+
+    <!-- ............................................................. -->
+
+    <!-- <form action=" ">
+        <label for=" ">File</label><br>
+        <p onclick="document.getElementById( 'file').click() ">Press here</p>
+        <button type="button" onclick="document.getElementById( 'file').click() ">Choose file</button>
+        <input id="file" style="display:none;" type="file" accept=".pdf" name="file" required><br><br> -->
+    <!-- accept="image/*,video/*,audio/*It means all sound files, .doc,.pdf, ..etc. " -->
+    <!-- <button type="submit">Upload file</button>
+    </form><br>
+    <hr> -->
+
+    <!-- ......................................................... -->
+    <!-- <label>LESSON (25)</label>
+    <label>VIDEO (26)</label>
+    <label>input</label> -->
+    <!-- <form method="POST ">It is problem you do not can read any thing send to server -->
+    <!-- <form method="GET ">you can read any thing send to server -->
+    <!-- .................................................................. -->
+    <!-- <form action="https://codershiyar.com "> -->
+    <!-- <label>Color:</label>
+        <input type="color" name="color"><br><br>
+        <label>Hidden:</label>
+        <input type="hidden" name="hidden"><br><br>
+        <label>URL:</label>
+        <input type="URL" name="URL"><br>
+        <label>Date:</label>
+        <input type="date" name="date"><br> -->
+    <!-- <label>Month:</label>
+        <input type="month" name="month"><br>
+        <label>Week:</label>
+        <input type="week" name="week"><br> -->
+    <!-- <label>Number:</label>
+        <input type="number" name="number"><br><br>
+        <label>Search:</label>
+        <input type="search" name="search" placeholder="Search" maxlength="7"><br>
+        <label>Range:</label>
+        <input type="range" name="range" max="100" /><br> -->
+    <!-- <label>Are you married ? </label><br>
+        <label>yes :</label>
+        <input type="checkbox" checked name="married" value="yes">
+        <label>no :</label>
+        <input type="checkbox" name="married" value="no"><br><br> -->
+    <!-- <button type="submit">Send</button> -->
+    <!-- </form><br> -->
+
+    <!-- ................................................................. -->
+    <!-- <br>
+    <h2 title="Lesson (26) meta tag"> meta tag :</h2>
+    <br>
+    <hr>
+    <br> -->
+    <!-- ............................................................... -->
+    <!--There is a relationship between meter element and lesson (28)-->
+    <!-- <h2 title="Lesson (28) meter"> meter element :</h2><br>
+
+    <table>
+        <tr title="Lesson (28) meter">
+            <td>ٍ Student (1) : Amer </td>
+            <td><meter min="0" max="100" value="90" low="50" hight=" " optimum="90"></meter></td>
+        </tr>
+        <tr title="Lesson (28) meter">
+            <td>ٍStudent (2) : Ali</td>
+            <td><meter min="0" max="100" value="50" low="50" hight="70" optimum="70"></meter></td>
+        </tr>
+        <tr title="Lesson (28) meter">
+            <td>ٍStudent (3) : Abas</td>
+            <td><meter min="0" max="100" value="40" low="50" hight="70" optimum="60"></meter></td>
+        </tr>
+    </table><br>
+    <hr> -->
+
+    <!-- ................... -->
+
+    <!-- 
+    <label>LESSON (29)</label><label>VIDEO (30)</label>textarea<br><br>
+    <form action=" ">
+        <textarea required id=" " cols="50 " rows="10 " maxlength="11 " placeholder="Write your msg here .. " name="sms " autofocus></textarea><br><br>
+        <button type="submit ">Send msg</button>
+    </form><br><br>
+    <hr> -->
+
+    <!-- ................ iframe element .................. -->
+    <!-- <center><br>
+        <h2 title="LESSON (29) iframe"> iframe element :</h2>
+        <br>
+        <p title="LESSON (29) iframe">We use iframe to show another website inside our website ...</p>
+        < <iframe width="90% " allowfullscreen height="400 " src="https://academy.codershiyar.com " frameborder="0 "></iframe> 
+    <br>
+
+    <P title="LESSON (29) iframe">We show this website as example :</P><br>
+    <a title="LESSON (29) iframe" href="https://academy.codershiyar.com" target="_blank"> Academy Shiyar</a>
+    </center><br> -->
+    <!-- .................................. -->
+
+    <!-- <iframe width="90%" sandbox="allow-forms allow-modals allow-popups" allowfullscreen height="400" frameborder="0">Academy Shiyar</iframe> -->
+    <!-- When we write sandbox we stop allow all these properties to work, sandbox="allow-forms allow-modals allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts allow-top-navigation "we write this properties to allow it to run 
+
+    <hr>-->
+
+
+
+    <!-- .................................................................... -->
+    <!-- <br>
+
+    <label title="Lesson (34) google maps"> How to add google maps ?</label><br><br>
+    <iframe title="Lesson (34) google maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.027776438488!2d13.147392685482115!3d32.76499749190681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x544b3c72d3f5b957!2zMzLCsDQ1JzU0LjAiTiAxM8KwMDgnNDIuNyJF!5e0!3m2!1sar!2sly!4v1656972119782!5m2!1sar!2sly "
+        width="500" height="300" style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe>
+    <br><br>
+    <hr> -->
+
+    <!-- ................................................ -->
+    <!-- <br>
+    <h2 title="Lesson (35) File path"> File path :</h2>
+    <br> -->
+    <!-- The Way number one:  Cross file inside html folder directly -->
+    <!-- <img class="imgfilepath" title="Lesson (35) File path : Cross file inside html folder directly" src=js-0.jpg alt=/> -->
+    <!-- The Way number Two : To define file found inside another folder that inside html folder -->
+    <!-- <img class=" imgfilepath " title=" Lesson (35) File path : To define file out of html folder ex: here called admin .. img src=. ./img/css-0.jpg alt=C ode didn 't run with this path" src=img/html-01.jpg alt=/> -->
+    <!-- The Way number Three: To define file  out of html folder ex: here called admin .. <img src="../img/css-0.jpg " alt=" "/>  Code didn't run with this path -->
+    <!-- <img class="imgfilepath " title="Lesson (35) File path : The Way number Three: folder inside another folder called admin ../img src=. ./img/css-0.jpg alt=C ode didn 't run with this path" src="admin/css-0.jpg" alt=" " />
+    <br><br>
+
+ -->
+    <footer class="back">
+        <a href="index.html">Home</a>
+    </footer><br>
+
+</body>
+
+</html>

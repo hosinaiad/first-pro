@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Contact</title>
+    <style>
+        #form-1 {
+            color: black;
+            text-align: center;
+            font-weight: bold;
+            /* align-items: left; */
+        }
+        
+        #form-2 {
+            margin: 15px;
+            padding: 22px;
+        }
+        
+        .dvcontact {
+            width: 750px;
+            background-color: rgb(234, 232, 232);
+            padding: 15px;
+            border-radius: 15px;
+        }
+        /* #form-3 {
+           border: yellow bold 11px; 
+           
+    }*/
+        /*#form-4 {
+            padding: 22px; 
+        /* background: yellow; 
+    }*/
+        /* #form-5 {
+            padding: 22px;
+        } */
+    </style>
+</head>
+
+<body>
+
+
+    <br>
+    <h1>Contact</h1>
+    <hr>
+
+    <br>
+    <center>
+        <div class="dvcontact">
+            <h3>We waite you :</h3>
+            <p> to contact us, if need any support, and you have any suggestion, we are on service, we provide our services on time. Meeting your needs is our goals, we provide courses to support your learning programming languages, to develope your knowledge
+                & skills for design and building websites.
+            </p>
+        </div>
+    </center>
+
+
+
+
+    <fieldset>
+
+        <legend id="form-2">
+            <h2> Contact </h2>
+        </legend>
+        <center>
+            <form action=" " class="dvcontact">
+                <h3> Fill data :</h3>
+
+                <table>
+                    <tr>
+                        <td><label id="form-1">: From</label></td>
+                        <td><input type="text" name="text" id="form-1" placeholder="From">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td> <label id="form-1">: To</label></td>
+                        <td><input type="text" name="text" id="form-1" placeholder="To "></td>
+                    </tr>
+                    <tr>
+                        <td> <label id="form-1">: Subject</label></td>
+                        <td><input type="text " name="subject" id="form-1" placeholder="subject"></td>
+                    </tr>
+
+                    <tr>
+                        <td> <label id="form-1">: Write MSG</label></td>
+                        <td> <textarea name="writemsg" id="form-1" cols="30" rows="10" placeholder="Write your msg here"></textarea></td>
+                    </tr>
+
+                    <tr>
+                        <td>
+                            <!-- <p onclick="document.getElementById( 'file').click() "> Press here</p> -->
+                        </td>
+                        <td>
+                            <button type="button" onclick="document.getElementById( 'file').click()">Add file</button>
+                            <!-- image/* : It is means all image files .. .jpg,.jpeg,.svg,.png, ..  .etc.. -->
+                            <!-- Accept="image/*,video/*,audio/*,.pdf,.doc " -->
+
+                            <input id="file" style="display:none;" type="file" accept=".doc,.pdf,.png" name="file" required>
+
+                            <button type="submit">Upload file</button>
+                        </td>
+                    </tr>
+
+                    <tr>
+                        <td></td>
+                        <td> <button type="reset"> Reset </button>
+                            <button type="email" name="sendemail"> Send MSG </button>
+                        </td>
+
+                    </tr>
+                </table>
+
+            </form>
+        </center><br>
+    </fieldset>
+
+
+
+    <!-- <center>
+        <fieldset>
+            <legend>
+                <h2>Contact</h2>
+            </legend>
+
+            <form action=" ">
+                <label for=" ">From : </label>
+                <input type="email " placeholder=" Enter your email " required><br>
+                <label for=" ">To :   </label>
+                <input type="email " placeholder=" Enter email " required><br>
+                <label for=" ">Subject :  </label>
+                <input type="text " placeholder=" Enter subject msg "><br>
+
+                <label for=" ">Write MSG : </label>
+                <textarea name=" " id=" " cols="50 " rows="10 " placeholder=" Enter your msg ">
+                </textarea><br>
+                <input type="submit " value="Send Data "></input>
+                <label for=" ">Add file : </label>
+                <input type="file " value="Upload file ">Upload file</input>
+
+            </form>
+        </fieldset>
+
+    </center> -->
+
+    <!-- <div>
+        <a href="garbage.html ">Garbage</a>
+    </div> 
+    <br>-->
+    <br>
+    <div class="back">
+        <a href="index.html">Home</a>
+    </div>
+
+</body>
+<br>
+
+</html>

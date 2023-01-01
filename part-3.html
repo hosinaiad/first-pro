@@ -1,0 +1,1311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>P-3 HTML Structure</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Twitter -->
+    <!-- There is relationship between these "6" items below & Lesson(50) video(51)  twitter meta tag, for more details see below page. -->
+    <!-- We add them into <head> -->
+    <!-- no: (1) -->
+    <meta name="twitter:card" content="summary_large_image">
+    <!-- no: (2) -->
+    <meta name="twitter:title" content="Coder Shiyar">
+    <!-- no: (3) -->
+    <meta name="twitter:description" content="">
+    <!-- no: (4) -->
+    <meta name="twitter:image" content="">
+    <!-- no: (5) -->
+    <meta name="twitter:site" content="">
+    <!-- no: (6) -->
+    <meta name="twitter:creator" content="">
+
+
+    <style>
+        #content {
+            width: 1000px;
+            margin: auto;
+        }
+        
+        header {
+            float: left;
+            background: rgb(238, 168, 168);
+            height: 90px;
+            width: 700px;
+            font-weight: bold;
+            padding-top: 35px;
+            text-align: center;
+        }
+        
+        nav {
+            float: right;
+            background: rgb(163, 147, 147);
+            height: 90px;
+            width: 300px;
+            font-weight: bold;
+            padding-top: 35px;
+            text-align: center;
+        }
+        
+        aside {
+            float: left;
+            background: rgb(229, 234, 139);
+            height: 5800px;
+            width: 250px;
+            font-weight: bold;
+            padding-top: 111px;
+            text-align: center;
+        }
+        
+        main {
+            float: right;
+            background: rgb(182, 222, 127);
+            height: 5800px;
+            width: 750px;
+        }
+        
+        main section {
+            background: rgb(139, 154, 106);
+            height: 400px;
+            width: 750px;
+            margin: 5px;
+        }
+        
+        main article {
+            float: left;
+            background: rgb(106, 138, 154);
+            height: 220px;
+            width: 350px;
+            margin: 10px;
+            padding: 11px;
+        }
+        
+        footer {
+            clear: both;
+            /* clear: boath;  = <div> .. "Block" start new line */
+            background: rgb(222, 167, 122);
+            height: 75px;
+            width: 1000px;
+            font-weight: bold;
+            padding-top: 30px;
+            text-align: center;
+        }
+        
+        #strctur {
+            width: 1000px;
+            background: rgb(222, 167, 122);
+            margin: auto;
+            height: 90px;
+        }
+        
+        #title_id {
+            background: red;
+            color: white;
+        }
+        
+        .title_class {
+            background: rgb(227, 227, 225);
+        }
+        
+        #title_iid {
+            background: #000;
+            color: white;
+        }
+        /* marquee span img {
+            height: 50px;
+            width: 50px;
+            margin: 0 10px;
+            border-radius: 50%;
+            object-fit: contain;
+        } */
+        
+        .btn {
+            background-color: #fff;
+            width: 150px;
+            height: 33px;
+            padding: 5px;
+            border-radius: 15px;
+            border: none;
+            font-weight: bold;
+            margin: 5px;
+        }
+        
+        .artcl {
+            width: 720px;
+            height: 220px;
+        }
+        
+        #dv-ul {
+            float: left;
+            /* margin-left: 55px; */
+        }
+        
+        #dv-ol {
+            float: right;
+            margin-left: 66px;
+        }
+        
+        #dv-dl {
+            float: right;
+            margin-left: 66px;
+        }
+    </style>
+
+
+
+    <!-- To show icon in tab near Title of Browser page & for Search engin-->
+    <link rel="icon" href="img/coding.ico">
+    <!-- For Search engin with "icon" the last tag, recommended for SEO -->
+    <link rel="shortcut" href="img/html-02.jpg">
+    <!-- For all devices that works on apple system -->
+    <link rel="apple-touch-icon" href="img/html-02.jpg">
+
+    <meta name="keywords">
+    <meta name="author">
+
+    <!-- ...............base ............... -->
+    <!-- <base href="https//.......... ........../"> -->
+
+</head>
+
+
+<body>
+
+    <br>
+    <h1 title="Lesson (37,38) Structure"><b>Courses >> P-3: HTML Structure</b></h1>
+
+    <!-- ... marquee ... -->
+    <marquee title="Lesson (51) marquee" bgcolor="purple" scrollamount="10" behavior=" " direction="left">
+        <span><img src="img/html-01.jpg " alt=" ">.. Learn HTML ..</span>
+        <span><img src="img/css-0.jpg " alt=" ">.. Learn CSS ..</span>
+        <span><img src="img/js-0.jpg " alt=" ">.. Learn JS ..</span>
+        <span><img src="img/html-01.jpg " alt=" ">.. Learn HTML ..</span>
+        <span><img src="img/css-0.jpg " alt=" ">.. Learn CSS ..</span>
+        <span><img src="img/js-0.jpg " alt=" ">.. Learn JS ..</span>
+        <span><img src="img/html-01.jpg " alt=" ">.. Learn HTML ..</span>
+        <span><img src="img/css-0.jpg " alt=" ">.. Learn CSS ..</span>
+        <span><img src="img/js-0.jpg " alt=" ">.. Learn JS ..</span>
+    </marquee>
+    <br>
+    <hr><br>
+
+    <!--  bgcolor="red " height="40 " width="300 " behavior="scroll "default value",slide,alternate " direction="up down left right " hspace="10px add space or margin left & right " vspace="10px add space or margin up & down "  loop="10 to repeat
+    it ten times " scrollamount="speed of elements " scrollamount="value is 1-6, six is default one is the slowest, six is the fastest "-->
+
+
+    <!-- Lesson(37) video(38) Structure part one .. 
+         Lesson(38) video(39) Structure part two .. -->
+    <div id="content">
+        <center>
+            <h1 title="Lesson (37,38) Structure"> Structure :</h1><br>
+        </center>
+        <header title="Lesson (37,38) Structure">header</header>
+        <nav title="Lesson (37,38) Structure">nav</nav>
+        <aside title="Lesson (37,38) Structure">aside</aside>
+
+
+        <main>
+            <br>
+
+            <!-- Article (0) -->
+            <article class="artcl" title="Lesson (37,38) Structure ">
+                <div id="float">
+                    <ins><b> Article-0</b></ins>
+
+                    <!-- <form title="lesson=(25)" method="GET" action="https://www.yahoo.com "></form> -->
+                    <h3 title="lesson=(25) color"> input type :</h3>
+                    <!-- about input type="color " tag -->
+
+                    <label>input type color :</label>
+                    <input title="lesson=(25) color" type="color"><br>
+
+                    <label> input text:</label>
+                    <input type="text" title="lesson=(25) text" placeholder="input text :"><br>
+                    <!--  text input allow to write any text -->
+
+                    <label> input url  :</label>
+                    <input type="url" title="lesson=(25) url" placeholder="input url tag :"><br>
+                    <!-- It is work inside form tag, form always used to send data to server or another html page -->
+
+                    <label> input date:</label>
+                    <input type="date" title="lesson=(25) Date" placeholder="input date :"><br>
+                    <!--  date input date .. -->
+
+                    <label title="lesson=(25) Hidden">input hidden:</label>
+                    <input type="hidden"><br>
+                    <!--  hidden input  -->
+
+                    <label> Number  :</label>
+                    <input type="number" title="lesson=(25)Number" name="number" max="20 " placeholder="Number"><br><br>
+                    <!-- Write just numbers not texts -->
+                </div>
+
+
+                <div id="flot"><br><br>
+                    <label> Month:</label>
+                    <input type="month" title="lesson=(25) Month" name="month" max="20" placeholder="Month"><br>
+                    <!-- Write month -->
+
+                    <label> Week  :</label>
+                    <input type="week" title="lesson=(25) Week" name="week" max="20" placeholder="Week"><br><br>
+                    <!-- Write week -->
+
+                    <label>  Are you married ?</label>
+                    <label>Yes :</label>
+                    <input title="lesson=(25) Checkbox" type="checkbox" checked name="married" value="yes">
+                    <label>No :</label>
+                    <input title="lesson=(25) Checkbox" type="checkbox" checked name="unmarried" value="yes">
+                    <br><br>
+                    <!-- Write checkbox -->
+
+                    <button type="submit">Send</button>
+
+                </div>
+            </article>
+
+
+            <!--  Article-1 -->
+            <article class="artcl">
+                <ins><b> Article-1</b></ins>
+
+                <h3 title="Lesson (39) superscript & subscript Element"> superscript & subscript Element :</h3>
+                <div id="float" title="Lesson(39) superscript & subscript Element">
+                    <p title="Lesson(39) superscript Element"> 222 <sup>4</sup></p>
+                    <p title="Lesson(39) subscript Element"> 111 <sub>3</sub></p>
+
+                    <p title="Lesson(39) superscript Element"> My name: <sup> Hussin Aiad</sup></p>
+                    <p title="Lesson(39) subscript Element"> My name: <sub> Hussin Aiad</sub></p>
+                </div>
+
+                <div id="flot">
+                    <h2 title="Lesson (5) b em small ins strong i mark"> b em small ins strong i mark :</h2><br>
+                    <!--There is a relationship between these elements and lesson (5)v(6)-->
+
+                    I like to <b title="Lesson (5) b em "> learn <em title="Lesson (5) b em"> HTML</em></b><br>
+                    <small title="Lesson (5) small"> I like</small> to <b title="Lesson (5) b"> learn <i title="Lesson (5) i"> HTML</i></b><br>
+                    <ins title="Lesson (5) ins"> I like</ins> to <strong title="Lesson (5) strong"> learn <i title="Lesson (5) i">HTML</i></strong><br>
+                    <small title="Lesson (5) small"> I like</small> to <mark title="Lesson (5) mark"> learn  HTML</mark><br><br><br>
+
+                </div>
+            </article>
+
+
+            <!-- Article (2) -->
+            <!-- <img height="80%" width="100%" style="object-fit:cover;" src=" img/html-01.jpg " alt=""> -->
+            <article title="Lesson (37,38) Structure">
+                <ins><b> Article-2</b></ins>
+
+                <h2> How to design website "Build Structure" : </h2>
+                <h3 title="
+                    New Elements of structure website :         
+                        <header></header>
+                        <nav></nav>
+                        <aside></aside>
+                        <main></main>
+                        <section></section>
+                        <article></article>
+                        <footer></footer>
+                        Note: All these above elements = <div> element, just there are names ..
+                        ">
+                    Content of structure : ....
+                </h3>
+                <br>
+                <a href="structure.html" target="_blank">
+                    <h1 style="text-align: center;">Structure</h1>
+                </a>
+            </article>
+
+
+            <!-- Article (3) -->
+            <article title="Lesson (37,38) Structure ">
+                <ins><b> Article-3</b></ins>
+
+                <!-- input type Checkbox -->
+                <h3 title="Lesson(25) input checkbox">input type Checkbox :</h3><br>
+                <label title="Lesson(25) input checkbox">Are you married ?</label>
+                <input type="checkbox" name="married" value="yes"><br>
+                <label title="Lesson(25) input checkbox">Do you have a job ?</label>
+                <input type="checkbox" name="job" value="yes"><br>
+                <label title="Lesson(25) input checkbox">Are you sick ?</label>
+                <input type="checkbox" name="sick" checked value="yes"><br><br>
+
+            </article>
+            <!-- ....................... -->
+
+            <!-- Article (4)
+            <article title="Lesson (37,38) Structure">
+                Article-4
+
+                <h2> meter element : </h2>
+
+                <table>
+                    <tr title="Lesson (28) meter">
+                        <td>ٍ Student (1) : Amer </td>
+                        <td><meter min="0" max="100" value="90" low="50" hight=" " optimum="90"></meter></td>
+                    </tr>
+                    <tr title="Lesson (28) meter">
+                        <td>ٍStudent (2) : Ali</td>
+                        <td><meter min="0" max="100" value="50" low="50" hight="70" optimum="70"></meter></td>
+                    </tr>
+                    <tr title="Lesson (28) meter">
+                        <td>ٍStudent (3) : Abas</td>
+                        <td><meter min="0" max="100" value="40" low="50" hight="70" optimum="60"></meter></td>
+                    </tr>
+                </table><br>
+            </article> -->
+
+            <!-- ............................ -->
+
+            <!-- Article (4) -->
+            <article title="Lesson (37,38) Structure">
+                <ins><b> Article-4</b></ins>
+
+                <!--<label title="Lesson (28) meter"> Student (1) : Amer </label>-->
+                <h2 title="Lesson (28) meter"> meter element : </h2><br>
+                <label title="Lesson (28) meter"> Student (1) : Amer </label>
+                <meter min="0" max="100" value="90" low="50" hight=" " optimum="90"></meter>
+
+                <label title="Lesson (28) meter">Student (2) : Ehab </label>
+                <meter min="0" max="100" value="50" low="50" hight="70" optimum="70"></meter>
+
+                <label title="Lesson (28) meter">Student (3) : Abas </label>
+                <meter min="0" max="100" value="40" low="50" hight="70" optimum="60"></meter>
+                </label>
+                <br>
+            </article>
+
+
+            <!-- Article (5) -->
+            <article title="Lesson (37,38) Structure ">
+                <ins><b> Article-5</b></ins>
+
+                <h2 title="LESSON (29) iframe"> iframe element :</h2>
+                <br>
+                <center>
+                    <p title="LESSON (29) iframe">We use iframe to show another website inside our website ...</p>
+                    <!-- <iframe width="90% " allowfullscreen height="400 " src="https://academy.codershiyar.com " frameborder="0 "></iframe> -->
+
+                    <P title="LESSON (29) iframe">We show this website as example :</P><br>
+                    <b><a title="LESSON (29) iframe" href="https://academy.codershiyar.com" target="_blank"> Academy Shiyar</a></b>
+                </center>
+
+            </article>
+
+
+            <!--  Article-6 -->
+            <article class="artcl">
+                <ins><b> Article-6</b></ins>
+
+                <h2 title="Lesson (34) google maps"> How to add google maps ?</h2>
+                <center>
+                    <iframe title="Lesson (34) google maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3355.027776438488!2d13.147392685482115!3d32.76499749190681!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x544b3c72d3f5b957!2zMzLCsDQ1JzU0LjAiTiAxM8KwMDgnNDIuNyJF!5e0!3m2!1sar!2sly!4v1656972119782!5m2!1sar!2sly "
+                        width="700" height="160" style="border:0; " allowfullscreen=" " loading="lazy " referrerpolicy="no-referrer-when-downgrade "></iframe></center>
+                <br>
+
+            </article>
+
+
+            <!-- Article (7) -->
+            <article title="Lesson (37,38) Structure">
+                <ins><b> Article-7</b></ins>
+
+                <h2 title="Lesson (35) File path"> File path :</h2><br>
+                <!-- The Way number one:  Cross file inside html folder directly -->
+                <img class="imgfilepath" title="Lesson (35) File path : Cross file inside html folder directly" src="img/html-01.jpg" alt=/>
+                <!-- The Way number Two : To define file found inside another folder that inside html folder -->
+                <img class=" imgfilepath " title=" Lesson (35) File path : To define file out of html folder ex: here called admin .. img src=. ./img/css-0.jpg alt=C ode didn't run with this path" src="img/css-0.jpg" alt="" />
+                <!-- The Way number Three: To define file  out of html folder ex: here called admin .. <img src=" ../img/css-0.jpg " alt=" "/>  Code didn't run with this path -->
+                <img class="imgfilepath " title="Lesson (35) File path : The Way number Three: folder inside another folder called admin ../img src=. ./img/css-0.jpg alt=C ode didn't run with this path" src="js-0.jpg" alt=" " />
+                <br><br>
+
+            </article>
+
+
+            <!-- Article (8) -->
+            <article title="Lesson (37,38) Structure ">
+                <ins><b> Article-8</b></ins>
+
+                <!-- Sound Range -->
+                <h3 title="Lesson (18) Range">input type Sound Range :</h3><br><br>
+                <Center>
+                    <input title="Lesson (18) Range" type="range" name="range " max="20"><br><br>
+                    <!-- For audio to rise and low level sound -->
+                </Center>
+            </article>
+
+
+            <!-- Article (9) -->
+            <article title="Lesson (37,38) Structure ">
+                <ins><b> Article-9</b></ins>
+
+                <!-- bdi solve problem arabic letters
+                   - dir="rtl " in case the website with english language -->
+                <h3 title="Lesson(36) bdi"> bdi tag :</h3><br>
+                <div title="Lesson(36) bdi" dir="rtl">
+                    <p> أسمي بالانجليزية Hussin Aiad</p>
+                    <p> User حسين 2022</p>
+                </div><br>
+                <!-- <bdi> tag in case the website in srabic lagage -->
+
+                <p title="Lesson(36) bdi"><bdi>أسمي بالانجليزية</bdi> Hussin Aiad</p>
+                <p title="Lesson(36) bdi"> User <bdi> حسين </bdi> 2022 </p>
+                <br>
+                <br>
+            </article>
+
+
+            <!-- Article (10) -->
+            <article title="Lesson (37,38) Structure ">
+                <ins><b> Article-10</b></ins>
+
+                <!-- pre element -->
+
+                <h2 title="Lesson (32) pre element"> pre element :</h2><br>
+                <p title="Lesson (32) p element">
+                    I like learn : 1: HTML. 2: CSS. 3: JS.
+                </p>
+                <pre title="Lesson (32) pre element">I like learn :
+                      1: HTML.
+                      2: CSS.
+                      3: JS.
+                </pre>
+                <br>
+                <!-- For pre element -->
+                </Center>
+            </article>
+
+
+
+            <!-- Article (11) -->
+            <article title="Lesson (37,38) Structure ">
+                <ins><b> Article-11</b></ins>
+                <!-- <hr> -->
+                <h2 title="Lesson (31) hr element">hr element :</h2><br>
+                <center>
+                    <!-- <hr> tag -->
+                    <!--There is a relationship between <hr> element and lesson (31)v(32) and lesson (44)v(45) <abbr> -->
+
+                    <hr title="Lesson(31) On hr element" style="background: rgb(222, 99, 99);height: 4px;border: 0px; ">
+                    <abbr title="Hyper Text Markup Language - Lesson(44)"><b>HTML</b></abbr>
+                    <br>
+                    <hr title="Lesson(31) Under hr element" title="Lesson(31) hr element" style="background: rgb(203, 233, 126); height: 4px;border: 0px; ">
+                </center>
+                <br><br>
+                <h2 title="Lesson(31) On hr element"> hr element line .. </h2>
+                <hr title="Lesson(31) hr element" style="background: rgb(235, 137, 137); height:4px; border:0;" />
+                <h2 title="Lesson(31)  Under hr element"> hr element line ..</h2>
+                <br>
+
+                <br>
+            </article>
+
+
+
+            <!-- Article (12) -->
+            <article title="Lesson (37,38) Structure ">
+                <ins><b> Article-12</b></ins>
+
+                <br>
+                <div>
+                    <h2 title="Lesson (33) div & span elements => block & inline ">
+                        <b> <ins> div p h2 & span elements :</ins></b>
+                    </h2>
+                    <br>
+
+                    <!-- block -->
+                    <h1 title="Lesson (33) Ex: <h1><div></div></h1>">
+                        Hussin "block"
+                        <div> Aiad </div>
+                    </h1><br>
+
+                    <!-- inline -->
+                    <h1 title="Lesson (33) Ex: <h1><span></span></h1>">
+                        Hussin "inline "
+                        <span> Aiad</span>
+                    </h1><br>
+                </div>
+            </article>
+
+
+            <!-- Article (13) -->
+            <article title="Lesson (37,38) Structure ">
+                <ins><b> Article-13</b></ins>
+
+                <br><b><ins> The same in this example below :</ins></b>
+                <!-- block --><br><br>
+                <div id="blk">
+
+                    <h1 title="Lesson (33) Ex: <h1><p><img src= alt= ></p></h1>">
+                        Hussin Aiad "block"
+                        <p><img src="img/html-02.jpg" width="77" alt=" "></p>
+                    </h1>
+                </div>
+                <br>
+                <div id="blok">
+                    <h1 title="Lesson (33) Ex: <h1><div><img src= alt= ></div></h1>">
+                        Hussin Aiad "block"
+                        <div><img src="img/html-01.jpg" width="77" alt=""></div>
+                    </h1>
+                </div>
+            </article>
+
+
+            <!-- Article (14) -->
+            <article title="Lesson (37,38) Structure ">
+                <ins><b> Article-14</b></ins>
+
+                <br>
+                <!-- inline -->
+                <h1 title="Lesson (33) Ex: <h1><span><img src= alt= ></span></h1>">
+                    Hussin Aiad "inline"
+                    <span><img src="img/html-02.jpg " width="77" alt=" "></span>
+                </h1>
+
+                <h1 title="Lesson (33) Ex: <h1><label><img src= alt= ></label></h1>">Hussin Aiad "inline"
+                    <label><img src="img/html-02.jpg" width="77" alt=" "></label>
+                </h1><br><br>
+
+            </article>
+
+
+            <!-- Article (15) -->
+            <article title="Lesson (37,38) Structure ">
+                <ins><b> Article-15</b></ins>
+
+                <h2>
+                    <b>
+                    <ins>More example :</ins>
+                    </b> <br><br>
+                </h2>
+
+                <div title="Lesson (33) Ex: <div><h2>...</h2></div>">
+                    <h2> Hussin "block"</h2>
+                    <h2> Aiad</h2>
+                </div>
+
+                <span title="Lesson (33) Ex: <span><h2>...</h2></span>"> Hussin "block"
+                <h2> Aiad</h2>
+                </span>
+
+                <div title="Lesson (33) Ex: <div><p>...</p></div>"> Hussin "block"
+                    <p> Aiad</p>
+                </div>
+            </article>
+
+
+            <!-- Article (16) -->
+            <article title="Lesson (37,38) Structure ">
+                <ins><b> Article-16</b></ins>
+
+                <h2>
+                    <b>
+                    <ins>More example :</ins>
+                    </b>
+                </h2>
+                <br> <span title="Lesson (33) Ex: <span><p>...</p>
+                    </span>"> Hussin "block"
+                <p> Aiad</p>
+                </span>
+
+                <div title="Lesson (33) Ex: <div><h2>...</h2></div>">
+                    Hussin "block"
+                    <h2> Aiad</h2>
+
+                    <span title="Lesson (33) Ex: <span><h2>...</h2>
+                        </span>"> Hussin "block"
+                    <h2> Aiad</h2>
+                    </span><br>
+                </div>
+            </article>
+
+
+            <!-- Article (17) -->
+            <article title="Lesson (37,38) Structure ">
+                <ins><b> Article-17</b></ins>
+
+                <h2>
+                    <b>
+                    <ins>More example :</ins>
+                    </b> <br><br>
+                </h2>
+                <div title="Lesson (33) Ex: <div><label>...</label></div>">Hussin "inline"
+                    <label> Aiad</label>
+                </div>
+                <span title="Lesson (33) Ex: <span><label>...</label></span>">Hussin "inline"
+                <label> Aiad</h2>
+                
+               <br>
+                </article>
+
+
+          
+            <!-- Article (18) -->
+            <article title="Lesson (37,38) Structure ">
+                <ins><b> Article-18</b></ins>
+                <!-- address abbr code & dfn -->
+                <!-- Lesson(44) video(45) address abbr code & dfn  -->
+                <div title="Lesson (44) code abbr dfn & address ">
+                    <h3>code abbr dfn & address :</h3><br>
+                    <address title="Lesson (44) address ">Phone:+218919011223</address>
+                    <!-- Just italic text title, we can write inside any phone email link text or paragraph -->
+                    <p title="Lesson (44) <p>">Phone:+218919011223</p>
+                    <!-- Not italic text title as above -->
+                    <abbr title="Hyper Text Markup Language <abbr>">HTML</abbr>
+                    <!-- Just hint , we can write to explained any terms "inline"--><br>
+                    <code title="Lesson (44) code">Phone:+218919011223</code><br>
+                    <!-- Just for format text or paragraph, we can write beautiful text  or paragraph with this tag "inline"-->
+                    <dfn title="Lesson (44) dfn">Phone:+218919011223</dfn>
+                    <!-- just for italic text or paragraph as above "inline" -->
+                </div>
+                <br>
+            </article>
+
+            <!-- Article (19) -->
+            <article title="Lesson (37,38) Structure">
+                <ins><b> Article-19</b></ins>
+
+                <!-- Lesson(46) v (47) How to upload files on your website -->
+                <div title="Lesson (46)"><center>
+                    <h3 title="Lesson (46) upload photo audio video & PDF files"> How to upload files on your website?</h3><br>
+                    <a title="Lesson (46) upload photo files" href="js-0.jpg" download="logo.jpg"> Upload photo file</a><br>
+                    <a title="Lesson (46) upload audio files" href="audio/birdsSound.mp3" download="birds.mp3"> Upload audio file</a><br>
+                    <a title="Lesson (46) upload video files" href="video/system.mp4" download="system.mp4"> Upload video file</a><br>
+                    <a title="Lesson (46) upload PDF files" href="pdf-file.pdf" download="tst.pdf"> Upload pdf file</a>
+                    <br><br></center>
+                </div>
+                <br>
+            </article>
+
+
+            <!-- Article (20) -->
+            <article title="Lesson (37,38) Structure">
+                <ins><b> Article-20</b></ins>
+
+                <!-- Lesson(6)  How to create Link <a> -->
+                    <ins><b><h3 title="Lesson (6) a & (external website,internal page, mailto & tel)">HTML Links a :</h3></b></ins><br>
+
+                    <center>
+                        <!--There is a relationship between <a></a> tag and lesson (6)v(7)-->
+                        <a title="Lesson (6) a (external website)" href=" https://google.com" target="_blank">
+                            <h3>Google</h3>
+                        </a>
+                
+                        <a title="Lesson (6) a (internal page)" href="contact.html" target="_blank">
+                            <h3>contact</h3>
+                        </a>
+                        <a title="Lesson (6) a (mailto:)" href="mailto: name@name.com" target="_blank">
+                            <h3>Email</h3>
+                        </a>
+                
+                        <a title="Lesson (6) a (tel:)" href=" tel: +218910000000" target="_blank">
+                            <h3>Phone</h3>
+                        </a>
+                        <br>
+                    </center>
+                    
+                <br>
+            </article>
+
+
+            <!-- Article (21) -->
+            <article title="Lesson (37,38) Structure">
+                <ins><b> Article-21</b></ins>
+                
+                <!--  Lesson(47)v(48) q center blockquote paragraph -->
+                <h3 title="Lesson (47) q center blockquote & paragraph"> q center blockquote & paragraph :</h3>
+                <h3 title="Lesson (47) q "> q :</h3>
+                <center>
+                <q title="Lesson (47) <q> Double quotation">  Learn HTML </q><br>
+                <!-- <q> tag to put statement inside "Double quotation" inline -->
+                <p title="Lesson (47) <p><q></q></p> Double quotation"><q>  Learn HTML </q></p>
+                <!-- You can put it in paragraph -->
+                <span title="Lesson (47) <span> put it in paragraph">  Learn HTML </span>
+                <!-- inline -->
+                <p title="Lesson (47) <p> put it in paragraph"><span>  Learn HTML </span></p><br>
+                <!-- You can put it in paragraph either-->
+            </center>
+            </article>
+
+
+            <!-- Article (22) -->
+            <article title="Lesson (37,38) Structure">
+                <ins><b> Article-22</b></ins>
+
+                <h3 title="Lesson (47) q center blockquote & paragraph"> q center blockquote paragraph :</h3>
+                <center>
+                <h3 title="Lesson (47) center">Center :</h3>
+                <center title="Lesson (47) <center> element" style="background:red;width:200px;height:40px;">
+                    <p> Learn HTML with us ..</p>
+                    <img title="Lesson (47) <center> element" src="img/coding.ico" width="200" height="80" alt=" ">
+                </center><br>
+           
+                <!-- put element in center line-->
+                <br>
+            </article>
+
+
+            <!-- Article (23) -->
+            <article title="Lesson (37,38) Structure ">
+                <ins><b> Article-23</b></ins>
+
+                <h3 title="Lesson (47) q center blockquote & paragraph"> q center blockquote & paragraph :</h3>
+                <h3 title="Lesson (47) center">Center div :</h3>
+                <center>
+                    <div title="Lesson (47) <center> element" style="background:green;width:200px;height:80px;text-align:center;">
+                        <p> Learn HTML with us </p>
+                        <img title="Lesson (47) center" src="img/coding.ico" width="200" height="80" alt="">
+                    </div>
+                    <!-- put element in start line "Block"-->
+                </center>
+            </article>
+
+
+            <!-- Article (24) -->
+            <article title="Lesson (37,38) Structure">
+                <ins><b> Article-24</b></ins>Article-23
+
+                <h3 title="Lesson (47) blockquote"> q center blockquote paragraph :</h3>
+                <!--blockquote  -->
+                <h3 title="Lesson (47) blockquote">Blockquote :</h3><br>
+                <blockquote title=" Lesson (47) <blockquote> start line, Block" cite="https://codershiyar.com "> Learn HTML with us ..
+                </blockquote><br>
+                </article>
+
+
+          <!-- Article (25) -->
+            <article title="Lesson (37,38) Structure">
+                <ins><b> Article-25</b></ins>
+                
+                <h3 title="Lesson (47) q center blockquote paragraph"> q center blockquote paragraph :</h3>
+                <h3 title="Lesson (47) p paragraph"> P :</h3><br>
+                <!-- It will not show cite="https://codershiyatr.com " for users, just you can write it-->
+                <p title="Lesson (47) p paragraph">
+                    Learn HTML with us ..
+                </p><br>
+            </article>
+
+
+            <!-- Article (26) -->
+            <article title="Lesson (37,38) Structure">
+                <ins><b> Article-26</b></ins>
+
+                <h3 title="Lesson (48) contenteditable">Contenteditable :</h3><br>
+                <!--   Lesson(48)v(49) contenteditable="true or false " property & script element .. -->
+                <h1 title="Lesson (48) contenteditable true" contenteditable="true">I want to learn website design : "true "</h1>
+                <!-- With contenteditable="true " property you can Edit content into <h1> item on website page -->
+
+                <h1 title="Lesson (48) contenteditable false " contenteditable="false">I want to learn website design : "false"</h1>
+                <!-- With contenteditable="false " property you can't edit content into <h1> item on website page, now it is un-active. -->
+            </article>
+
+
+            <!-- Article (27) -->
+            <article title="Lesson (37,38) Structure">
+                <ins><b> Article-27</b></ins>
+
+                <h3 title="Lesson (48) Contenteditable">Contenteditable :</h3>
+                <!-- ex: Just with js -->
+                <span title="Lesson (48) contenteditable" id="text"> Contenteditable ...  </span><br><br>
+                <button class="btn" title="Lesson (48) contenteditable" onclick=" save()" type="button">  Save</button>
+                <button class="btn" title="Lesson (48) contenteditable" onclick=" edit()" type="button ">  Edit</button>
+                <br><br>
+            </article>
+
+
+            <!-- Article (28) -->
+            <article title="Lesson (37,38) Structure">
+                <ins><b> Article-28</b></ins>
+
+                <h3 title="Lesson (49) dialog"> Dialog :</h3><br>
+                <!--   Lesson(49) video(50)  <dialog id=" " open>...<dialog>-->
+                <center>
+                    <button class="btn" title="Lesson (49) Dialog" onclick="openDialog()"> Show Dialog </button>
+                    <dialog title="Lesson (49) dialog" id="box">
+                        <img src="js-0.jpg" width="200">
+                        <h1>Java Script</h1>
+                        <p>Learn HTML with us. </p><br>
+                        <button onclick="closeDialog()">Close</button>
+                    </dialog>
+                </center>
+                <br><br>
+            </article>
+
+
+            <!-- Article (29) -->
+            <article title="Lesson (37,38) Structure">
+                <ins><b> Article-29</b></ins>
+
+                <h3 title="Lesson (52) Change Error">Change Error :</h3><br>
+                <div title="Lesson (52) Change Error">
+                    <form>
+                        <input type="email" required oninvalid="error_message(this)" oninput="error_message()" placeholder="Email" />
+                        <input type="text" required oninvalid="error_message1(this) " oninput="error_message()" placeholder="text" /><br>
+                        <button type="submit">Submit</button>
+                    </form>
+                </div>
+                <br>
+            </article>
+
+
+            <!-- Article (30) -->
+            <article title="Lesson(37,38) Structure">
+                <ins><b> Article-30</b></ins>
+
+                <!-- To do that we use bootstrap.com  & getbootstrap.com 
+                 We do that many times and success -->
+
+                <h2 title="Lesson(53) To do that we use bootstrap.com  & getbootstrap.com, We do that many times and success"> How to Create new free website? </h2><br>
+                <a title="Lesson(53) Create new free website " href=" rsturnt/index.html" target="_blank "><br>
+                    <h1 style="text-align: center;">Restaurant</h1>
+                </a>
+                <br>
+            </article>
+
+
+            <!-- Article (31) -->
+            <article title="Lesson (3,38) Structure">
+                <ins><b> Article-31</b></ins>
+
+                <!-- Lesson(54)v(55)  Free domain & Hosting -->
+                <h3 title="Lesson(54) Free domain & Hosting">How to get free domain & Hosting? </h3><br>
+                <center>
+                    <h3 title="Lesson(54) Free domain & Hosting">
+                        <p title="Lesson(54) Free domain & Hosting"> Using :</p>
+                        <a href="http://www.eb2a.com" target="_blank">
+                            www.eb2a.com
+                         </a>
+                        <p title="Lesson(54) Free domain & Hosting"> website. </p><br>
+                        <label title="Lesson(54) Free domain & Hosting"> Follow steps :</label>
+                </h3>
+                </center>
+                <br>
+            </article>
+
+
+            <!-- Article (32) -->
+            <article title="Lesson (37,38) Structure ">
+                <ins><b> Article-32</b></ins>
+
+
+                <h2 title="Lesson (55) Publish your website on Search engin google & Bing?"> Publish your website on :</h2><br><br>
+                <center>
+                    <h3 title="Lesson (55) Publish your website on Search engin google & Bing?">
+                        Search engin google & Bing?
+                    </h3>
+                </center>
+            </article>
+
+
+            <!-- Article (33) -->
+            <article title="Lesson (37,38) Structure ">
+                <ins><b> Article-33</b></ins>
+
+
+                <h3 title="Lesson(56) Publish your website on Internet, free Hosting on GitHub pages">Publish your website on Internet, free Hosting on GitHub pages. </h3><br><br>
+                <center>
+                    <!-- Lesson(56)v(57) How to publish your website on Internet,free Hosting,on GitHub pages -->
+                    <h3 title="Lesson(56) Publish your website on Internet, free Hosting on GitHub pages"> GitHub pages.</h3>
+                </center>
+            </article>
+
+            <!-- Article (34) -->
+            <article title="Lesson (37,38) Structure ">
+                <ins><b> Article-34</b></ins>
+
+                <br>
+                <h3 title="Lesson (54) Hint"> Hint :</h3><br>
+                <!-- Lesson(54)v(58)  title=" hint " property,  just Hint-->
+                <h2 title=" Lesson (54) Hint (Hyper Text Markup Language) ">HTML</h2>
+                <div title="Lesson (54) Hint (Hint with div) ">
+                    Learn HTML
+                </div><br>
+            </article>
+
+
+            <!-- Article (35) -->
+            <article title="Lesson (37,38) Structure ">
+                <ins><b> Article-35</b></ins>
+
+                <!-- Lesson (55)v(59) Important Points about HTML-->
+                <h3 title="Lesson (55)v(59) Points"> Points :</h3><br>
+                <center>
+                    <h3 title="Lesson (55)v(59) Important Points about HTML ..">Important Points about HTML ..</h3>
+                    <p title=" 
+                - Explaining important points about HTML language and suggestions to use important tools : 
+                
+       1. Close items as <div></div> or <img .... /> ...etc.
+       2. If you write HTML or CSS Code & didn't run, always from browser, it take 
+          copy of code and put it into RAM, automatically, to avoid that there is feature lighthouse on Developer tools it runs if the file on server or internet, If you on VAN (شبكة محلية) or on your computer, settings=clear data to delete temporary data, that saved into Browser, maybe that caused to didn't run codes. 
+       3. To avoid forget codes, and if you need any code, write in the browser 
+          search any word or title (table) as example, it give you on time. 
+       4. To get hance of jobs, Try to access with company, and try to convince   
+          (اقناعهم) them you have hight level of skills and able to fill a job, develop your skills.">Explaining important points ..
+                    </p>
+                </center>
+            </article>
+
+
+            <!-- Article (36) -->
+            <article class="" title="Lesson (37,38) Structure ">
+                <ins><b> Article-36</b></ins>
+
+
+                <!--Lesson(56)v(60) noscript show letter when JS forbidden "stop " in browser -->
+                <h3 title="Lesson(56)v(60) noscript show letter when JS forbidden( (stop) in browser "> noscript :</h3><br>
+                <center>
+                    <h3 title="Lesson(56)v(60) the content you can select, when js didn 't work on browser">noscript show letter when JS forbidden "stop" on Browser.</h3><br>
+                </center>
+
+
+                <h3 title="
+                  <noscript>
+                    alert(' js working on .. ');
+                    Our app didn't work for you, Because js not support on this browser or stopped. 
+                  </noscript>
+                    ">
+                    Ex : ...
+                </h3>
+                <br>
+            </article>
+
+
+            <!-- Article (37) -->
+            <article class="" title="Lesson (37,38) Structure ">
+                <ins><b> Article-37</b></ins>
+
+
+                <h2>meta tag :</h2><br>
+                <p title="Lesson (42) link icon : - We write <link type=icon src=img/001.ico href=img/coding.ico> inside head tag, We write this link to show icon on the tab near title on browser as above and either for Search engin, we can add icon for all HTML pages,and we n see it on search page result.">1. link rel="icon" :</p>
+
+                <p title="Lesson (42) link rel=shortcut href= : We add this link recommended with (link rel=icon) item above & for Search engin ">2. link rel="shortcut" href="" :</p>
+                <p title="Lesson (42) link rel=apple-touch-icon href=img/coding.ico : this link for all devices that run on apple system ">3. link rel="apple-touch-icon" href="" :</p>
+
+                <p title="Lesson (4) meta charset=UTF-8">4. meta charset="UTF-8 " :</p>
+
+
+                <p title="Lesson (43) SEO HTML elements : We add these inks inside head tag for SEO, It is all necessary to show the website on Search engin & Social Media.
+                1: <title>Website Name</title> : this tag for define page title,it is necessary on all pages.
+                2: <meta name=description> : this tag for define page description, it's define statement as (Coder Shiyar is IT engineer).
+                3: <meta charset=(UTF-8) : this tag to make website support all symbols, special shapes, letters of languages as arabic language and others , it is necessary on all pages.
+                4: <meta name=(viewport) content=(width=device-width, initial-scale=1.0)>:
+                -It is optional : We write this links inside <head> tag, to make your website seemed or run good on mobile devices.
+                5: <meta name=(keywords) : It is optional elements to define words or statement, maybe help to improve showing our website on Search engin.
+                ">5. "SEO " HTML elements :</p>
+            </article>
+
+
+            <!-- Article (38) -->
+            <article class=" " title="Lesson (37,38) Structure ">
+                <ins><b> Article-38</b></ins>
+
+
+                <h2>Follow meta tag :</h2><br>
+
+                <p title="Follow lesson (43) SEO HTML elements :
+                 6: <meta name=(author)> content=(Hussin Aiad) : this meta define Search engin and others with author.
+                 Note: - we add it into <head>. - The website the best to help for get good keywords, https:// rapid tags.io/generator. - Following is example to keywords:
+                    <meta name=(keywords) content=(Lessons of programming, html,learn html, Coder shiyar,learn html,html,html tutorial,html tutorial for beginners,html for beginners,html5,html course,html5 tutorial,html css tutorial,html css,learn html and css,introduction
+                        to html,learn html in hindi,html 5,html basics,learn to code,learn html for beginners,html crash course,html coding,learn,html tags,learn html5,learn css,learn html 2022,learn html fast,learn html in nepali,learn html in minutes,html
+                        full course,learn html full course). ">
+                    6. Follow "SEO " HTML elements :</p>
+
+
+                <p title="Lesson (50) Twitter meta : 
+                - We add <meta name=(twitter:....)> items into <head>. 
+                -  We add Twitter meta to show how your website seemed when you   
+                   publish it on twitter, if use this tag it will be good when share it on twitter, You can specify a different view for each page in your website,You can control how your page is displayed when you publish it on twitter.
+                  
+                    ">7. Twitter meta :</p>
+
+                <p title=" Lesson (50) Following Twitter meta : 
+                twitter meta tag, for more details see below :
+                1. We write this below tag when we like large image :
+                <meta name=(twitter:card) content=(summary_large_image).
+                2. Through this below tag we can determine the address (title):
+                <meta name=(twitter:title) content=()>.
+                3. Through this below tag we can write description, define statement : 
+                <meta name=(twitter:description) content=( Coder Shiyar is online teacher)"> 8: Following Twitter meta (A) : </p>
+
+                <p title=" Lesson (50) Following Twitter meta : 
+                    twitter meta tag, Following more details see below :
+                    4. from here you can define image path,from website or folder : 
+                       <meta name=(twitter:image) content=( )>
+                     5. This tag is default, you can not add, and you can determine username if he has account on twitter : 
+                     <meta name=(twitter:site) content=(...@username)>.
+                     6. This tag is default, you can not add,  here you can determine content creator if he has account on twitter :
+                     <meta name=(twitter:creator) content=(@username author)>">
+                    9: Following Twitter meta (B) : </p>
+
+
+
+                <p title=" Lesson (45) Facebook meta :
+                Open graph, for more details see below :
+                1. Through this below tag we can define the address (title):
+                <meta property=(og:title) content=(to show title)>.
+                2. Through this below tag we can write description we want show, define statement : 
+                <meta property=(og:description) content=( Coder Shiyar is online teacher)
+                3. Through this below tag we can show image, define image : 
+                <meta property=(og:image) content=()/>.
+                4. Through this below tag we can show image, define default image : 
+                <meta property=(og:image:width) content=(1200)/>.
+                 "> 10: Facebook meta : </p>
+
+
+                <p title=" Lesson (45) Following Facebook meta :
+                Following open graph, for more details see below :
+                5. Through this below tag we can show image, define default image, if size of image so small image show small : 
+                <meta property=(og:image:height) content=(630)/>.
+                6. Through this below tag we can define link of page that we put property, recommended for beginners: don't use this property to avoid error : 
+                <meta property=(og:url) content=()/>.
+                7. Through this below tag we can define type of page that this property found inside as website or article : 
+                <meta property=(og:type) content=(website-article)/>.
+                ">11: Following Facebook meta : </p>
+            </article>
+
+
+            <!-- Article (39) -->
+            <article class="artcl" title="Lesson (37,38) Structure ">
+                <div id="float">
+                    <ins><b> Article-39</b></ins>
+
+
+                    <!-- ................. HTML lists ................... -->
+                    <!--There is a relationship between <ul><ol><dl>li,dt,dd> tag and lesson (9)v(10) HTML lists-->
+
+                    <h2 title="lesson (9) HTML Lists">HTML Lists :</h2><br>
+                    <div id="dv-ul">
+                        <h2 title="lesson (9) HTML List ul">HTML List ul :</h2>
+                        <ul title="lesson (9) HTML Lists ul " type="square">
+                            <li>HTML in Arabic</li>
+                            <li>HTML in Arabic</li>
+                            <li>HTML in Arabic</li>
+                        </ul>
+                    </div>
+
+                    <div id="dv-dl">
+                        <h2 title="lesson (9) HTML List dl">List dl :</h2>
+                        <dl title="lesson (9) HTML List dl">
+                            <dt>Learn HTML in Arabic:</dt>
+                            <dd>Learn HTML in Arabic</dd>
+                        </dl>
+                    </div>
+
+                    <div id="dv-ol">
+                        <h2 title="lesson (9) HTML List ol">List ol :</h2>
+                        <ol title="lesson (9)  HTML List ol" type="1" start="1">
+                            <li>HTML in Arabic</li>
+                            <li>HTML in Arabic</li>
+                            <li>HTML in Arabic</li>
+                        </ol>
+                    </div>
+                    <br>
+
+                </div>
+            </article>
+
+
+            <!-- Article (40) -->
+            <article class="artcl" title="Lesson (37,38) Structure ">
+                <div>
+                    <ins><b> Article-40</b></ins>
+
+
+                    <br><br>
+                    <!--There is relationship between <audio> element and lesson (10)-->
+                    <center>
+                        <h3 class="h3">Audio :</h3><br>
+
+                        <audio title="Lesson (10) audio element " src="audio/bolblySound.mp3" controls autoplay loop preload="none"></audio>
+                        <!-- It has many properties : controls autoplay muted loop preload="none "-->
+                        <!-- To choose the best source or the best extension - for audio & video -->
+                        </audio>
+
+                </div>
+
+            </article>
+            </center>
+
+
+
+
+            <!-- Article (41) -->
+            <article class="artcl" title="Lesson (37,38) Structure ">
+                <div>
+                    <ins><b> Article-41</b></ins>
+
+
+                    <br><br>
+
+                    <!--There is relationship between <video> element and lesson (11)-->
+                    <center>
+                        <h3 class="h3">Video :</h3><br>
+                        <video title="Lesson (11) video " src="video/system.mp4" controls width="255" height="100" autoplay muted loop preload=" metadata " poster="img/coding.ico "></video>
+                        <!-- It has many properties : controls autoplay muted loop preload="metadata " poster="img/coding.ico "-->
+                    </center>
+
+                </div>
+                <br>
+            </article>
+
+
+
+
+        </main>
+    </div>
+
+    <!-- <footer id="strctur "></footer> -->
+
+
+    <!-- ....................... moved to .................................... -->
+    <!-- Lesson(42)v(43) <link rel="icon ">  -->
+    <!-- 
+        - We write <link type="icon " src="img/001.ico " href="img/coding.ico> inside
+
+                            <head> tag - We write this link to show icon on the tab near
+                                <title> on browser as above and either for Search engin -->
+
+    <!-- ........... moved above ........... -->
+    <!-- <link rel="shortcut" href="img/coding.ico"> 
+    We add this link recommended with <link rel="icon"> item & for Search engin  -->
+
+    <!-- ........... moved above ........... -->
+    <!-- <link rel="apple-touch-icon" href="img/coding.ico"> -->
+    <!-- this link for all devices that run on apple system -->
+
+
+
+    <!-- ........... moved above............ -->
+    <!-- Lesson(43) video(44) HTML elements for "SEO" 
+        - We add these inks inside <head> tag for SEO.
+        - It is all necessary to show the website on Search engin & Social Media.
+     -->
+
+    <!-- 1: <title>Website Name</title> -->
+    <!-- this tag for define page title,it is necessary on all pages  -->
+
+    <!-- 2: <meta name="description"> -->
+    <!-- this tag for define page description, it's define statement as "Coder Shiyar is IT engineer"-->
+
+    <!-- 3: <meta charset="UTF-8"> -->
+    <!-- this tag to make website support all symbols, special shapes, letters of languages as arabic language and others , it is necessary on all pages  -->
+
+
+    <!-- 4: <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <!--  We write this tag inside <head>, to make your website appease or run good on mobile devices.  -->
+
+    <!-- 5: <meta name="keywords"> -->
+    <!-- keywords : It is optional elements to define words or statement, maybe help to improve showing our website on Search engin. -->
+
+    <!--Note:
+        - we add it into <head>. 
+        - The website the best to help for get good keywords .. https://rapidtags.
+          io/generator.
+        - Following is example to keywords: 
+          <meta name="keywords" content="Lessons of programming, html,learn html,  Coder shiyar,learn html,html,html tutorial,html tutorial for beginners,html for beginners,html5,html course,html5 tutorial,html css tutorial,html css,learn html and css,introduction to html,learn html in hindi,html 5,html basics,learn to code,learn html for beginners,html crash course,html coding,learn,html tags,learn html5,learn css,learn html 2022,learn html fast,learn html in nepali,learn html in minutes,html full course,learn html full course">
+    -->
+    <!-- ........... moved above............ -->
+
+    <!-- 6: <meta name="author"> content="Coder Shiyar" -->
+    <!-- this meta tag define Search engin and others with author
+        <br>
+        <hr> -->
+
+
+    <!-- .................  moved  above................. -->
+
+
+    <!-- Lesson(50) video(51)  twitter meta tag -->
+    <!--
+        - We add <meta name="twitter:.... "> items into <head>.
+         - How to show your website when you publish it on twitter, if use this tag it will be good when share it on twitter, You can specify a different view for each page in your website,You can control how your page is displayed when you publish it on twitter.
+    -->
+
+    <!-- 1. We write this below tag when we like large image -->
+    <!-- <meta name="twitter:card " content="summary_large_image "> -->
+
+    <!-- 2. Through this below tag we can determine the address "title " -->
+    <!-- <meta name="twitter:title " content=" "> -->
+
+    <!-- 3. Through this below tag we can write description, define statement -->
+    <!-- <meta name="twitter:description " content="Coder Shiyar is online teacher "> -->
+    <!-- 4. from here you can determine image path, from website or folder. -->
+    <!-- <meta name="twitter:image " content=" "> -->
+
+    <!-- 5. This tag is default, you can not add, and you can determine username if he has account on twitter -->
+    <!-- . <meta name="twitter:site " content="@username "> -->
+
+    <!-- 6. This tag is default, you can not add,  here you can determine content creator if he has account on twitter -->
+    <!-- <meta name="twitter:creator " content="@username author "> -->
+
+
+
+
+    <!-- Lesson(51) video(52) marquee element, bgcolor property & behavior -->
+    <!-- - We add it into <body>.
+         - Often we use it  on News website & movies ...etc.
+         - His name is NewsTicker "الشريط الاخباري ".
+         - The marquee element has many of features.
+             - bgcolor="" height="40 " width="100% " 
+             - behavior="scroll,slide,alternate " direction="up down left right " hspace="10 " vspace="10 " loop="11 " scrollamount="value is 1-6, six is default ">
+            Learn HTML with us ..
+        </marquee>
+    -->
+
+
+
+    <!-- Lesson(52)v(53) Change error msg on PHP JS & C# when error happens in ..., not just in html. 
+        <br>-->
+
+    <!-- .................................................................. -->
+
+
+
+
+    <!-- Lesson(53)v(54) How o Create new free website "Restaurant" -->
+    <!-- To do that we use bootstrap.com  & getbootstrap.com -->
+    <!-- We do that many times and success -->
+
+
+    <!--Lesson(55)v(56) How to publish your website on Search engin Bing & google? -->
+
+    <!-- ................................................................. -->
+
+
+    <!--Lesson(56)v(60) noscript show letter when JS forbidden "stop" in browser -->
+    <!--the content you can select, when js didn't work on browser-->
+
+
+    <!-- <script> -->
+    <!-- // Follow Lesson(52) video(53) Change Error msg in PHP JS C# when error happens in form, not just in html. // function error_message(input) { // if (input.value == '') { // Put this letter you want show it for user when he did not put value inside required
+    field.. // input.setCustomValidity('Please fill message or text'); // Put this letter you want show it for user when he put invalid value inside text field .. // } else if (input.validity.typeMismatch) { // input.setCustomValidity('Envalid email);} -->
+    <!-- // Put this letter you want show it for user when he put valid value inside required field // else { // input.setCustomValidity(''); // } // return true; // } // ................. not work ..................... // Follow Lesson(52) video(53) Change
+    // Error msg in PH JS C# when error happens in form, not just in html. // function error_message1(input) { // if (input.value == '') { // Put this letter you want show it for user when he did not put value inside required field .. // input.setCustomValidity('Please
+    // fill data '); // Put this letter you want show it for user when he put invalid value inside text field .. // } else if (input.validity.typeMismatch) { // (input.setCustomValidity(' // Envalid email please another one ')); // Put this letter you -->
+    <!-- want show // it // for user when he put valid value inside required field.. // } // else { // input.setCustomValidity(''); // } // return true; // } // ............................................... function edit() { document.getElementById('text').contenteditable
+    // = "true"; // } // Follow Lesson(41) video(42) id & class.. // document.getElementById('title_iid').innerHTML = "عياد كعرود"; // ................... contentEditable ................ function save() // { // document.getElementById('text').contenteditable -->
+    <!-- = "false"; // } // function edit() { // document.getElementById('text').contenteditable = "true"; // } // .................dislog .................... function openDialog() { document.getElementById('box').setAttribute("open", // "true"); // } //
+    function closeDialog() { // document.getElementById('box').removeAttribute("open"); // } // document.getElementById('title_iid').innerHTML = "عياد كعرود"; // ................... contentEditable ................ function save() { document.getElementById('text').contenteditable -->
+    <!-- = "false"; } function edit() { document.getElementById('text').contenteditable // = "true"; // } // .................dislog .................... function openDialog() { document.getElementById('box').setAttribute("open", "true"); } function closeDialog()
+    { document.getElementById('box').removeAttribute("open"); } -->
+    <!-- </script> -->
+
+
+
+    <!-- document.getElementById('title_iid').innerHTML = "عياد كعرود"; // ................... contentEditable ................ function save() { document.getElementById('text').contenteditable = "false"; } function edit() { document.getElementById('text').contenteditable
+     = "true"; } // .................dislog .................... function openDialog() { document.getElementById('box').setAttribute("open", "true"); } function closeDialog() { document.getElementById('box').removeAttribute("open"); } -->
+    <center>
+        <footer title="Lesson (37,38) Structure">Footer </footer>
+    </center><br>
+
+
+    <div class="back">
+        <a href="index.html">Home</a>
+    </div><br>
+
+
+</body>
+
+</html>

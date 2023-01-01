@@ -1,0 +1,13 @@
+.carousel-item img {
+    max-height: 300px;
+    object-fit: cover;
+}
+
+#dvsm {
+    display: flex;
+    justify-content: center;
+    background: rgb(209, 201, 201);
+    padding: 7px;
+    border-radius: 11px;
+    /* margin: 5px 555px; */
+}
